@@ -2,8 +2,6 @@
 
 Volatile generation capacities such as PV and wind pose major challenges for electricity grids. Batteries can contribute both from a grid-supporting perspective and to improving the market situation (negative electricity prices). 
 
-A TechLabs project addressing challenges in electricity grids caused by volatile generation capacities like PV and wind. Using market, weather, and demand data, we aim to build a predictive model for optimizing battery dispatch strategies to stabilize grids and improve market outcomes.
-
 # Solution
 
 The aim is to use market data as well as weather and demand data to build a predictive model that contains a dispatch strategy for storing and withdrawing electricity.
@@ -16,6 +14,9 @@ The aim is to use market data as well as weather and demand data to build a pred
 - Model the dispatch with financial data
 - Real time implementation
 
+**Data Sources**
+Epex
+Energycharts
 
 Important links:
 
