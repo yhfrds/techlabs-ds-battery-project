@@ -14,9 +14,7 @@ The aim is to use market data as well as weather and demand data to build a pred
 - Model the dispatch with financial data
 - Real time implementation
 
-**Data Sources**
-Epex
-Energycharts
+**Data Sources**: Epex, Energycharts
 
 Important links:
 
