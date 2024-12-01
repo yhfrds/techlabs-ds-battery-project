@@ -3,5 +3,5 @@ A TechLabs project addressing challenges in electricity grids caused by volatile
 
 Important links:
 
-Microsoft Teams - https://teams.live.com/l/invite/FEA0DChUuH2yZFE2AQ
+Microsoft Teams - https://teams.live.com/l/invite/FEA0DChUuH2yZFE2AQ\n
 Project roadmap in Notion - https://techlabs.notion.site/Project-Roadmap-WT24-14e1127e595e80b8a059efd09318c29f
