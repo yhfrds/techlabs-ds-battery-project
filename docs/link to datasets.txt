@@ -1,0 +1,2 @@
+freiburg weather data https://www.dwd.de/EN/ourservices/cdc/cdc_ueberblick-klimadaten_en.html
+freiburg solar data https://www.weather.uni-freiburg.de/start_en.html
