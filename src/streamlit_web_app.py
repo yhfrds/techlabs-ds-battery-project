@@ -1,4 +1,4 @@
-"""
+r"""
 Before running this code, ensure that Streamlit is installed. You can install it using the following command:
 
     pip install streamlit
@@ -32,7 +32,7 @@ st.header('TransnetBW')
 st.subheader("Cities in the TransnetBW Region")
 cities = [
     "Stuttgart", "Karlsruhe", "Mannheim", "Freiburg", "Heidelberg",
-    "Ulm"
+    "Ulm", "etc."
 ]
 st.write(", ".join(cities))
 st.image(image='../data/images/TransnetBW area.png',
