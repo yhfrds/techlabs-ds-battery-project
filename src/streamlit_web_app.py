@@ -15,6 +15,8 @@ If the command doesn't work, double-check that you are in the correct directory 
 """
 
 
+import numpy as np
+import joblib
 import streamlit as st
 
 st.write("""
@@ -25,7 +27,7 @@ st.write("""
 
 """)
 
-
+st.write("helooooo")
 st.write('---')
 
 st.header('TransnetBW')
@@ -77,3 +79,13 @@ end_date = st.sidebar.date_input(
 
 # Display the selected date range
 st.write(f"Showing data from {start_date} to {end_date}")
+
+
+# Load model
+model = joblib.load("final_xgb_model.pkl")
+
+# Example usage (assuming it's a regression model)
+X_test = np.array([[5, 3, 1.5, 0.2]])  # Example input
+prediction = model.predict(X_test)
+
+print("Prediction:", prediction)
