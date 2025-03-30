@@ -123,9 +123,9 @@ if train_button or 'model' in st.session_state:
         st.markdown("## Result")
         st.write(f"Training set: {train_df.shape[0]} records")
         st.markdown(
-            f"Prediction: <strong>{prediction[0]:.2f} MW</strong>", unsafe_allow_html=True)
+            f"Predicted Residual Load of Tommorow: <strong>{prediction[0]:.2f} MW</strong>", unsafe_allow_html=True)
         st.markdown(
-            f"Actual: <strong>{y_test.values[0]:.2f} MW</strong>", unsafe_allow_html=True)
+            f"Actual Residual Load: <strong>{y_test.values[0]:.2f} MW</strong>", unsafe_allow_html=True)
 
     st.markdown("## Train-Actual-Prediction Values Comparison")
     min_date = df.index.min().date()
