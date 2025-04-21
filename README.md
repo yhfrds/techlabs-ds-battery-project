@@ -1,32 +1,7 @@
-# Large Scale Battery Dispatch Schedule
-## Folder Structure
+# Balancing the Grid: Residual Load Prediction
 
-- `src/`: Contains all the code for the project.
-- `data/`: Contains datasets, data models, and other data-related files.
-- `docs/`: Contains organizational and project management files, including meeting notes and schedules.
+In this project, the required electricity generation from non-renewable sources was predicted to complement renewable energy, as renewable sources alone cannot fully meet demand and are volatile based on different variables like weather. To ensure grid stability, the necessary residual load was forecasted. Three distinct modeling approaches were employed and compared to address the challenge: time series analysis, machine learning, and deep learning. The primary objective was to estimate how much energy needs to be backed up by non-renewables while transitioning gradually toward a more renewable-based energy system. Relevant energy and weather data were collected, processed, and cleaned to train the models.
 
-Each folder is organized to separate the core components of the project, making it easy to navigate.
-
-## Project Details
-### Problem
-
-Volatile generation capacities such as PV and wind pose major challenges for electricity grids. Batteries can contribute both from a grid-supporting perspective and to improving the market situation (negative electricity prices). 
-
-### Solution
-
-The aim is to use market data as well as weather and demand data to build a predictive model that contains a dispatch strategy for storing and withdrawing electricity.
-
-### Method/How?
-
-- Get Data from EPEX and other market sources as well as weather data and demand curves from Energycharts
-- Clean and filter data to remove outliers, inconsistencies, and noise that may affect analysis.
-- Machine Learning regressions to build an predictive model
-- Model the dispatch with financial data
-- Real time implementation
-
-**Data Sources**: Epex, Energycharts
-
-Important links:
-
-[Microsoft Teams](https://teams.live.com/l/invite/FEA0DChUuH2yZFE2AQ)  
-[Project roadmap in Notion](https://techlabs.notion.site/Project-Roadmap-WT24-14e1127e595e80b8a059efd09318c29f)
+## Sources
+Weather Dataset: [DWD](https://www.dwd.de/EN/ourservices/cdc/cdc_ueberblick-klimadaten_en.html) [Universität Freiburg](https://weather.uni-freiburg.de/start_en.html)
+Electricity Generation and Consumption Dataset: [SMARD](https://www.smard.de/en/marktdaten?marketDataAttributes=%7B%22resolution%22:%22hour%22,%22from%22:1726775047106,%22to%22:1727984647105,%22moduleIds%22:%5B1004066,1001226,1001225,1004067,1004068,1001228,1001224,1001223,1004069,1004071,1004070,1001227,5000410%5D,%22selectedCategory%22:8,%22activeChart%22:true,%22style%22:%22color%22,%22categoriesModuleOrder%22:%7B%7D,%22region%22:%22DE%22%7D)
